@@ -7,9 +7,9 @@ link.forEach((item)=>{
 }) 
 
 
-// Navigation open-close
+// Main Navigation open-close
 const navmenu = document.querySelector(".bx-menu")
-const appcontainer = document.querySelector(".app-container")
+const appcontainer = document.querySelector(".app-section")
 navmenu.addEventListener("click",()=>{
     appcontainer.classList.toggle("hide")
 })
@@ -28,7 +28,7 @@ btns.forEach((btn)=>{
 })
 
 
-// navigation
+// side menu navigation
 const menus = document.querySelectorAll(".side-menu-list")
 const submenus = document.querySelectorAll(".sub-menu-lists")
 menus.forEach((menu)=>{

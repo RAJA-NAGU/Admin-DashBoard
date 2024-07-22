@@ -8,17 +8,107 @@
 
 @media(max-width :992px) {
     .side-menu-bar {
-        left: -220px;
+        width: 0;
+        padding: 0;
     }
 
-    .main-section {
+    .app-main {
         width: 100%;
-        left: 0;
+        flex-grow: 1;
     }
 
     .search-container {
         display: none;
     }
 
+}
 
+@media(max-width :768px) {
+    .menu-item-link {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .menu-link {
+        font-size: 20px;
+    }
+
+    .secondary-menu {
+        gap: 5px;
+    }
+
+    .settings-drop-down {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .card-sub-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .chart-data {
+        justify-content: flex-start;
+    }
+
+    .data {
+        font-size: 14px;
+    }
+
+    .wallet-card .card-header {
+        padding: 15px 15px 50px;
+    }
+
+    .wallet-title {
+        font-size: 18px;
+    }
+
+    .wallet-amount {
+        font-size: 18px;
+    }
+
+    .profile {
+        padding: 5px 20px 5px 10px;
+
+    }
+
+    .profile-link {
+        gap: 5px
+    }
+
+    .profile-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .profile-name {
+        font-size: 14px;
+    }
+
+    .profile-menu-box {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile-menu-link {
+        font-size: 14px;
+    }
+
+    .wallet-info-card {
+        padding: 8px;
+    }
+
+    .section-footer {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10px;
+
+    }
+
+    .Copyright {
+        text-align: center;
+    }
 }

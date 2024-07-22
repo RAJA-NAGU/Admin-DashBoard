@@ -16,7 +16,9 @@
 }
 
 .app-section.hide .side-menu-bar {
-    transform: translate(-220px);
+    /* transform: translate(-220px); */
+    width: 0;
+    padding: 0;
     transition: all 0.5s ease-in-out;
 }
 
@@ -152,12 +154,13 @@
 
 .sales-card .card-inner,
 .revenue-card .card-inner {
-    min-height: 500px;
+    min-height: 450px;
 }
 
 .wallet-card .card-inner,
 .transaction-card .card-inner {
-    min-height: 542.8px;
+    /* min-height: 542.8px; */
+    min-height: 400px;
 }
 
 /* revenue card */
@@ -166,7 +169,7 @@
 }
 
 .data {
-    font-size: 19px;
+    font-size: 16px;
     color: var(--c-light-gray);
 }
 
@@ -191,7 +194,7 @@
 
 .revenue-img-container {
     max-width: 100%;
-    height: 350px;
+    height: 265px;
 }
 
 .revenue-card img {
@@ -208,7 +211,7 @@
 
 .sales-img-container {
     max-width: 300px;
-    height: 350px;
+    height: 300px;
     margin: 0 auto;
 }
 
@@ -472,11 +475,13 @@
 }
 
 /* footer */
-footer {
+.section-footer {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 10px;
 
 }
 
-footer p {
+.Copyright {
     font-size: 13px;
 }
