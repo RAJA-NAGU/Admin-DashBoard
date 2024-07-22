@@ -1,0 +1,142 @@
+.notes-container {
+    padding: 20px;
+}
+
+.menu-container {
+    width: var(--w-sidebar);
+    padding: 20px;
+}
+
+
+/* notes-list */
+.notes-icon,
+.tag-icon {
+    font-size: 16px;
+}
+
+.notes-link,
+.notes-icon,
+.tag-icon,
+.tag-title {
+    color: var(--c-gray);
+}
+
+.notes-link {
+    padding: 10px;
+    border-radius: var(--br-sm);
+}
+
+.notes-list.active .notes-link {
+    background-color: var(--c-slate-gray);
+    color: var(--c-light-gray);
+}
+
+.notes-list.active .notes-icon {
+    color: var(--c-light-gray);
+}
+
+
+
+/* tag-list */
+
+.tag-lists {
+    margin-left: 20px;
+}
+
+.tag-list {
+    margin-bottom: 15px;
+}
+
+.tag-link {
+    font-size: 16px;
+    color: var(--c-gray);
+    position: relative;
+}
+
+.tag-link::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--c-darkblue);
+    border-radius: var(--br-full);
+    position: absolute;
+    top: 5px;
+    left: -15px;
+}
+
+
+
+/* todo list */
+
+.task-input {
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: var(--br-sm);
+    font-size: 14px;
+    color: var(--c-light-gray);
+    background-color: var(--c-slate-gray);
+}
+
+.task-input::placeholder {
+    color: var(--c-light-gray);
+
+}
+
+.error {
+    font-size: 11px;
+    color: var(--c-red);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-shadow: 0 3px 12px var(--c-gray);
+    text-transform: uppercase;
+    animation: blink 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+
+.task-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 50%;
+    border: 0.5px solid var(--c-slate-gray);
+    padding: 20px;
+    border-radius: var(--br-sm);
+    margin-top: 10px;
+}
+
+.todo-item {
+    padding: 0 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.todo-inner {
+    padding: 5px 10px;
+    background-color: var(--c-shadow-gray);
+    border-radius: var(--br-sm);
+}
+
+.btn-close {
+    cursor: pointer;
+
+}
+
+.todo-value {
+    font-size: 13px;
+    text-transform: capitalize;
+}

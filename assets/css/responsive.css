@@ -1,0 +1,24 @@
+@media(max-width:1200px) {
+
+
+    .dashboard-card {
+        flex: 0 0 100%;
+    }
+}
+
+@media(max-width :992px) {
+    .side-menu-bar {
+        left: -220px;
+    }
+
+    .main-section {
+        width: 100%;
+        left: 0;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+
+}

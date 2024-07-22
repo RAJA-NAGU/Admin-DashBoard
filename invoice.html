@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- common styles -->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/colors.css">
+    <link rel="stylesheet" href="./assets/css/stylebits.css">
+    <link rel="stylesheet" href="./assets/css/flex.css">
+
+    <!-- component styles -->
+    <link rel="stylesheet" href="./assets/css/btn.css">
+    <link rel="stylesheet" href="./assets/css/invoice.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="invoice-container">
+        <div class="invoice-card-container">
+            <div class="invoice-card invoice-detail-card">
+                <div class="card-inner">
+                    <div class="d-flex jc-sb mB40">
+                        <div class="upload-container">
+                            <a href="" class="upload-link">
+                                <i class='bx bx-cloud-upload'></i>
+                                Click to upload Picture/Logo
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="invoice-label">Invoice Label</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex jc-sb g20 form-container">
+                        <form action="" class="form invoice-form">
+                            <h2 class="form-title">Form:-</h2>
+                            <div class="form-element">
+                                <label for="" class="form-label">Name</label>
+                                <input type="text" class="form-input" placeholder="Business Name">
+                            </div>
+                            <div class="form-element">
+                                <label for="" class="form-label">Email</label>
+                                <input type="text" class="form-input" placeholder="ecample@gmail.com">
+                            </div>
+                            <div class="form-element">
+                                <label for="" class="form-label">Address</label>
+                                <input type="text" class="form-input" placeholder="XYZ Street">
+                            </div>
+                            <div class="form-element">
+                                <label for="" class="form-label">Phone</label>
+                                <input type="text" class="form-input" placeholder="Business Name">
+                            </div>
+                        </form>
+
+
+
+                        <form action="" class="form bill-form">
+                            <h2 class="form-title">Bills To:-</h2>
+                            <div class="form-element">
+                                <label for="" class="form-label">Name</label>
+                                <input type="text" class="form-input" placeholder="Business Name">
+                            </div>
+                            <div class="form-element">
+                                <label for="" class="form-label">Email</label>
+                                <input type="text" class="form-input" placeholder="ecample@gmail.com">
+                            </div>
+                            <div class="form-element">
+                                <label for="" class="form-label">Address</label>
+                                <input type="text" class="form-input" placeholder="XYZ Street">
+                            </div>
+                            <div class="form-element">
+                                <label for="" class="form-label">Phone</label>
+                                <input type="text" class="form-input" placeholder="Business Name">
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="d-flex jc-sb pT30 mB30">
+                        <div>
+                            <h2 class="invoice-info-title">Invoice Number</h2>
+                            <a href="" class="invoice-info-description">#00001</a>
+                        </div>
+
+                        <div>
+                            <h2 class="invoice-info-title">Invoice Date</h2>
+                            <a href="" class="invoice-info-description description-date">21-7-2024</a>
+                        </div>
+
+                        <div>
+                            <h2 class="invoice-info-title">Due Date</h2>
+                            <a href="" class="invoice-info-description description-date">21-7-2024</a>
+                        </div>
+                    </div>
+
+                    <table class="invoice-table">
+                        <thead class="table-head">
+                            <th class="column-title">Description</th>
+                            <th class="column-title">Rate</th>
+                            <th class="column-title">Qty</th>
+                            <th class="column-title">Amount</th>
+                            <th class="column-title">Tax</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-row-box">
+                                    <div>
+                                        <div>
+                                            <span class="table-content">Item Description</span>
+                                        </div>
+                                        <div>
+                                            <span class="table-content">Item Details</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="table-row-box">
+                                    <div>
+                                        <span class="table-content">Price</span>
+                                    </div>
+                                </td>
+
+                                <td class="table-row-box">
+                                    <div>
+                                        <span class="table-content">Quantity</span>
+                                    </div>
+                                </td>
+
+                                <td class="table-row-box">
+                                    <div>
+                                        <span class="table-content-price">$24.00</span>
+                                    </div>
+                                </td>
+
+                                <td class="table-row-box">
+                                    <div>
+                                        <input type="checkbox" name="" id="">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="invoice-card currency-card">
+                <div class="card-inner">
+                    <div class=" mB20">
+                        <h3 class="currency-heading">Currency</h3>
+                        <a href="" class="d-flex al-c jc-sb mT20 currency-menu usd">
+                            <div class="d-flex g10  al-c">
+                                <img src="./assets/images/flag-us.svg" alt="" class="currency-img">
+                                <span class="currency-type">USD - US Dollar</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="mB20">
+                        <h3 class="currency-heading">Tax</h3>
+                        <h4 class="currency-sub-head mT20">Type</h4>
+                        <a href="" class="d-flex al-c jc-sb mT10 currency-menu">
+                            <span class="currency-type">None</span>
+                            <i class='bx bx-chevron-down'></i>
+                        </a>
+                    </div>
+
+                    <div>
+                        <h3 class="currency-heading">Tax</h3>
+                        <h4 class="currency-sub-head mT20">Type</h4>
+                        <a href="" class="d-flex al-c jc-sb mT10 currency-menu ">
+                            <div>
+
+                                <span class="currency-type">None</span>
+                            </div>
+                            <div>
+
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                </a>
+            </div>
+
+            <div class="invoice-card  invoice-action-card">
+                <div class="card-inner">
+                    <button class="btn invoice-btn-action btn-send mB20">Send invoice</button>
+                    <button class="btn invoice-btn-action btn-preview mB20">Preview</button>
+                    <button class="btn invoice-btn-action btn-save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>

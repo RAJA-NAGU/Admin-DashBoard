@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin dasshboard for solution">
+    <meta name="author" content="Raja">
+    <!-- fav-icon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- common styles -->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/colors.css">
+    <link rel="stylesheet" href="./assets/css/stylebits.css">
+    <link rel="stylesheet" href="./assets/css/flex.css">
+
+    <!-- component styles -->
+    <link rel="stylesheet" href="./assets/css/btn.css">
+    <link rel="stylesheet" href="./assets/css/pagelayout.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+
+    <!-- responsive styles -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+
+    <title>Raja &mdash; Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="primary-header">
+                <div class="header-container">
+                    <div class="d-flex al-c g20">
+                        <div class="logo-container ">
+                            <a href="" class="logo-link d-flex al-c g10">
+                                <img src="./assets/images/logo.svg" alt="Logo-image" class="logo-img">
+                                <span class="title">DABANG</span>
+                            </a>
+                        </div>
+                        <div class="search-container mL20 pos-rel">
+                            <div class="search-icon-box">
+                                <i class='bx bx-search-alt-2 f20 Search-icon'></i>
+                            </div>
+                            <input type="text" placeholder="Search.." class="search-bar">
+                        </div>
+                    </div>
+                    <div class="menu-container">
+                        <ul class="menu-lists d-flex al-c g10">
+                            <li class="menu-list">
+                                <a href="" class="menu-link">
+                                    <img src="./assets/images/canada-flag.png" alt="canada-flag" class="s20">
+                                </a>
+                            </li>
+                            <li class="menu-list">
+                                <a href="" class="menu-link">
+                                    <i class='bx bx-envelope'></i>
+                                </a>
+                            </li>
+                            <li class="menu-list">
+                                <a href="" class="menu-link">
+                                    <i class='bx bx-bell'></i>
+                                </a>
+                            </li>
+                            <li class="menu-list">
+                                <a href="" class="menu-link">
+                                    <img src="./assets/images/profile.webp" alt="profile-image  " class="s30 br-sm">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="secondary-header">
+                <div class="header-container d-flex">
+                    <div class="d-flex al-c g20">
+                        <div class="nav-menu-box">
+                            <a href="" class="menu f30">
+                                <i class='bx bx-menu'></i>
+                            </a>
+                        </div>
+                        <div>
+                            <ul class="menu-items d-flex g20">
+                                <li class="menu-item pos-rel">
+                                    <a href="" class="menu-item-link f18">Dashboard</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="" class="menu-item-link f18">Sales</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="drop-down-container pos-rel">
+                            <a href="" class="settings-drop-down d-flex al-c g20 btn btn-action">
+                                Settings
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="drop-down-lists mT20">
+                                <li class="drop-down-list">
+                                    <a href="" class="drop-down-link">Settings</a>
+                                </li>
+                                <li class="drop-down-list">
+                                    <a href="" class="drop-down-link">Email</a>
+                                </li>
+                                <li class="drop-down-list">
+                                    <a href="" class="drop-down-link">Print</a>
+                                </li>
+                                <li class="drop-down-list">
+                                    <a href="" class="drop-down-link">Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="app-section">
+
+            <aside class="side-menu-bar scrollbar">
+                <div>
+                    <nav>
+                        <ul class="side-menu-lists d-flex fd-c">
+                            <li class="side-menu-list active">
+                                <a href="" class="side-menu-link">
+                                    <div>
+                                        <i class='bx bx-home side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Dashboard</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-down  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bxl-mastodon side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Apps</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                                <ul class="sub-menu-lists">
+                                    <li class="sub-menu-list">
+                                        <a href="#" onclick="changePage('notes.html')" class="sub-menu-link">Notes</a>
+                                    </li>
+                                    <li class="sub-menu-list">
+                                        <a href="" onclick="changePage('invoice.html')"
+                                            class="sub-menu-link">Invoice</a>
+                                    </li>
+                                    <li class="sub-menu-list">
+                                        <a href="" class="sub-menu-link">Contact</a>
+                                    </li>
+                                    <li class="sub-menu-list">
+                                        <a href="" class="sub-menu-link">Calendar</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bxs-component side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Components</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bx-unite side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Elements</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bx-font-family side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Font Icons</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bxs-widget side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Widgets</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bx-tab side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Tablets</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bxs-data side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Data Tables</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bxs-detail side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Forms</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bx-user-pin side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Users</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bx-notepad side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Pages</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bx-lock side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Authentication</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bx-map-alt side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Drag & Drop</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bx-map side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Maps</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bx-line-chart side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Charts</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="side-menu-list">
+                                <a href="" class="side-menu-link ">
+                                    <div>
+                                        <i class='bx bx-station side-menu-icon'></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="side-menu-title">Start Kit</h4>
+                                    </div>
+                                    <div class="mLauto">
+                                        <i class='bx bx-chevron-right  side-menu-icon'></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+            <main class="app-main scrollbar">
+                <div class="main-content" id="main-content">
+                    <div class="dashboard-cards-container d-flex fw-w">
+                        <!-- revenue card -->
+                        <div class="revenue-card dashboard-card">
+                            <div class="card-inner">
+                                <div class="card-header">
+                                    <div class="d-flex al-c jc-sb">
+                                        <div>
+                                            <h3 class="card-title">Revenue</h3>
+                                        </div>
+                                        <div>
+                                            <div class="drop-down-container pos-rel">
+                                                <a href="" class="btn btn-action d-flex">
+                                                    <i class='bx bx-dots-horizontal-rounded card-menu'></i>
+                                                </a>
+                                                <ul class="drop-down-lists">
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">Weekly</a>
+                                                    </li>
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">Monthly</a>
+                                                    </li>
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">Yearly</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="card-sub-title mT30">Total Profit &nbsp; $50,000</p>
+                                    </div>
+                                    <div class="d-flex jc-fe">
+                                        <ul class="d-flex g25 al-c">
+                                            <li>
+                                                <a href="" class="data">
+                                                    <span class="circle income"></span>
+                                                    Income</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="data">
+                                                    <span class="circle expense"></span>
+                                                    Expenses</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="revenue-img-container">
+                                        <img src="./assets/images/revenue-img.png" alt="" class="w100pe h100pe">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sales card -->
+                        <div class="sales-card dashboard-card">
+                            <div class="card-inner">
+                                <div class="card-header mB30">
+                                    <div>
+                                        <h3 class="card-title">Sales by Category</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="sales-img-container">
+                                        <img src="./assets/images/category-chart.webp" alt="">
+                                    </div>
+                                    <div class="d-flex jc-c mT20">
+                                        <ul class="d-flex al-c g20">
+                                            <li>
+                                                <a href="" class="data">
+                                                    <span class="circle apparel"></span>
+                                                    Apparel
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="data">
+                                                    <span class="circle sports"></span>
+                                                    Sports
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="data">
+                                                    <span class="circle others"></span>
+                                                    Others
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- summary dashboard-card -->
+                        <div class="dashboard-card summary-card">
+                            <div class="card-inner">
+                                <div class="card-header">
+                                    <div class="d-flex jc-sb al-c">
+                                        <div>
+                                            <h3 class="card-title">Summary</h3>
+                                        </div>
+                                        <div>
+                                            <div class="drop-down-container pos-rel">
+                                                <a href="" class="btn btn-action d-flex">
+                                                    <i class='bx bx-dots-horizontal-rounded card-menu'></i>
+                                                </a>
+                                                <ul class="drop-down-lists">
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">
+                                                            Viewport
+                                                        </a>
+                                                    </li>
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">
+                                                            Edit Report
+                                                        </a>
+                                                    </li>
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">
+                                                            Mark as Done
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-container">
+                                        <img src="./assets/images/bar-chart.webp" alt="bar chart">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-card summary-card">
+                            <div class="card-inner">
+                                <div class="card-header">
+                                    <div class="d-flex jc-sb al-c">
+                                        <div>
+                                            <h3 class="card-title">Summary</h3>
+                                        </div>
+                                        <div>
+                                            <div class="drop-down-container pos-rel">
+                                                <a href="" class="btn btn-action d-flex">
+                                                    <i class='bx bx-dots-horizontal-rounded card-menu'></i>
+                                                </a>
+                                                <ul class="drop-down-lists">
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">
+                                                            Viewport
+                                                        </a>
+                                                    </li>
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">
+                                                            Edit Report
+                                                        </a>
+                                                    </li>
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">
+                                                            Mark as Done
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-container">
+                                        <img src="./assets/images/bar-chart.webp" alt="bar chart">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-card summary-card">
+                            <div class="card-inner">
+                                <div class="card-header">
+                                    <div class="d-flex jc-sb al-c">
+                                        <div>
+                                            <h3 class="card-title">Summary</h3>
+                                        </div>
+                                        <div>
+                                            <div class="drop-down-container pos-rel">
+                                                <a href="" class="btn btn-action d-flex">
+                                                    <i class='bx bx-dots-horizontal-rounded card-menu'></i>
+                                                </a>
+                                                <ul class="drop-down-lists">
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">
+                                                            Viewport
+                                                        </a>
+                                                    </li>
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">
+                                                            Edit Report
+                                                        </a>
+                                                    </li>
+                                                    <li class="drop-down-list">
+                                                        <a href="" class="drop-down-link">
+                                                            Mark as Done
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-container">
+                                        <img src="./assets/images/bar-chart.webp" alt="bar chart">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- wallet card -->
+                        <div class="dashboard-card wallet-card">
+                            <div class="card-inner">
+                                <div class="card-header">
+                                    <div>
+                                        <div class="profile-box mB40">
+                                            <div class="profile">
+                                                <a href="" class="profile-link">
+                                                    <div>
+                                                        <img src="./assets/images/profile.webp" alt="profile Image"
+                                                            class="profile-img">
+                                                    </div>
+                                                    <div>
+                                                        <h3 class="profile-name">Raja Nagu</h3>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div>
+                                                <div class="profile-menu-box">
+                                                    <a href="" class="profile-menu-link">
+                                                        +
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="wallet d-flex jc-sb">
+                                                <div>
+                                                    <h3 class="wallet-title">Wallet Balance</h3>
+                                                </div>
+                                                <div>
+                                                    <h3 class="wallet-amount">$100.04 </h3>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <div class="d-flex jc-c g25 wallet-info-box">
+                                            <div class="wallet-info-card">
+                                                <div class="card-head d-flex al-c jc-sb">
+                                                    <div>
+                                                        <h3 class="card-title">Received</h3>
+                                                    </div>
+                                                    <div>
+                                                        <i class='bx bx-chevron-up card-info-menu'></i>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex jc-c mT10">
+                                                    <span class="spent-box">$97.99
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="wallet-info-card">
+                                                <div class="card-head d-flex al-c jc-sb">
+                                                    <div>
+                                                        <h3 class="card-title">Spent</h3>
+                                                    </div>
+                                                    <div>
+                                                        <i class='bx bx-chevron-up card-info-menu'></i>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex jc-c mT10">
+                                                    <span class="spent-box">$80.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="p30">
+                                            <div class="pos-rel mB30">
+                                                <a href="" class="wallet-status-box">
+                                                    <span class="wallet-circle"> </span>
+                                                    Pending
+                                                </a>
+                                            </div>
+                                            <div class="d-flex jc-sb mB5">
+                                                <p class="plan-name"> Netflix</p>
+                                                <span class="plan-price">$ 15.845 </span>
+                                            </div>
+                                            <div class="d-flex jc-sb">
+                                                <p class="plan-name"> Disney Hotstar</p>
+                                                <span class="plan-price">$ 15.845 </span>
+                                            </div>
+                                            <div class="d-flex jc-sa mT30">
+                                                <a href="" class="details">View Details</a>
+                                                <a href="" class="pay">Pay Now $50.00</a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Transaction Card -->
+                        <div class="dashboard-card transaction-card">
+                            <div class="card-inner">
+                                <div class="card-head d-flex jc-sb mB15">
+                                    <div>
+                                        <h3 class="card-title">Transaction</h3>
+                                    </div>
+                                    <div class="drop-down-container pos-rel">
+                                        <a href="" class="btn btn-action">
+                                            <i class='bx bx-dots-horizontal-rounded card-menu'></i>
+                                            <ul class="drop-down-lists">
+                                                <li class="drop-down-list">
+                                                    <a href="" class="drop-down-link">Weekly</a>
+                                                </li>
+                                                <li class="drop-down-list">
+                                                    <a href="" class="drop-down-link">Monthly</a>
+                                                </li>
+                                                <li class="drop-down-list">
+                                                    <a href="" class="drop-down-link">Yearly</a>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="transaction-lists">
+                                        <li class="transaction-list d-flex jc-sb al-c">
+                                            <div class="d-flex al-c g10">
+                                                <div>
+                                                    <i class='bx bx-bus transaction-icon'></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="transaction-title">Transport Charge</h5>
+                                                    <span class="transaction-day">04 Jan 1:00PM </span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span class="transaction-price">-$16.44 </span>
+                                            </div>
+                                        </li>
+                                        <li class="transaction-list d-flex jc-sb al-c">
+                                            <div class="d-flex al-c g10">
+                                                <div>
+                                                    <i class='bx bx-bus transaction-icon'></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="transaction-title">Transport Charge</h5>
+                                                    <span class="transaction-day">04 Jan 1:00PM </span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span class="transaction-price">-$16.44 </span>
+                                            </div>
+                                        </li>
+                                        <li class="transaction-list d-flex jc-sb al-c">
+                                            <div class="d-flex al-c g10">
+                                                <div>
+                                                    <i class='bx bx-bus transaction-icon'></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="transaction-title">Transport Charge</h5>
+                                                    <span class="transaction-day">04 Jan 1:00PM </span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span class="transaction-price">-$16.44 </span>
+                                            </div>
+                                        </li>
+                                        <li class="transaction-list d-flex jc-sb al-c">
+                                            <div class="d-flex al-c g10">
+                                                <div>
+                                                    <i class='bx bx-bus transaction-icon'></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="transaction-title">Transport Charge</h5>
+                                                    <span class="transaction-day">04 Jan 1:00PM </span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span class="transaction-price">-$16.44 </span>
+                                            </div>
+                                        </li>
+                                        <li class="transaction-list d-flex jc-sb al-c">
+                                            <div class="d-flex al-c g10">
+                                                <div>
+                                                    <i class='bx bx-bus transaction-icon'></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="transaction-title">Transport Charge</h5>
+                                                    <span class="transaction-day">04 Jan 1:00PM </span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span class="transaction-price">-$16.44 </span>
+                                            </div>
+                                        </li>
+                                        <li class="transaction-list d-flex jc-sb al-c">
+                                            <div class="d-flex al-c g10">
+                                                <div>
+                                                    <i class='bx bx-bus transaction-icon'></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="transaction-title">Transport Charge</h5>
+                                                    <span class="transaction-day">04 Jan 1:00PM </span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span class="transaction-price">-$16.44 </span>
+                                            </div>
+                                        </li>
+                                        <li class="transaction-list d-flex jc-sb al-c">
+                                            <div class="d-flex al-c g10">
+                                                <div>
+                                                    <i class='bx bx-bus transaction-icon'></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="transaction-title">Transport Charge</h5>
+                                                    <span class="transaction-day">04 Jan 1:00PM </span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span class="transaction-price">-$16.44 </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- wallet card -->
+                        <div class="dashboard-card wallet-card">
+                            <div class="card-inner">
+                                <div class="card-header">
+                                    <div>
+                                        <div class="profile-box mB40">
+                                            <div class="profile">
+                                                <a href="" class="profile-link">
+                                                    <div>
+                                                        <img src="./assets/images/profile.webp" alt="profile Image"
+                                                            class="profile-img">
+                                                    </div>
+                                                    <div>
+                                                        <h3 class="profile-name">Raja Nagu</h3>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div>
+                                                <div class="profile-menu-box">
+                                                    <a href="" class="profile-menu-link">
+                                                        +
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="wallet d-flex jc-sb">
+                                                <div>
+                                                    <h3 class="wallet-title">Wallet Balance</h3>
+                                                </div>
+                                                <div>
+                                                    <h3 class="wallet-amount">$100.04 </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <div class="d-flex jc-c g25 wallet-info-box">
+                                            <div class="wallet-info-card">
+                                                <div class="card-head d-flex al-c jc-sb">
+                                                    <div>
+                                                        <h3 class="card-title">Received</h3>
+                                                    </div>
+                                                    <div>
+                                                        <i class='bx bx-chevron-up card-info-menu'></i>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex jc-c mT10">
+                                                    <span class="spent-box">$80.99</span>
+                                                </div>
+                                            </div>
+                                            <div class="wallet-info-card">
+                                                <div class="card-head d-flex al-c jc-sb">
+                                                    <div>
+                                                        <h3 class="card-title">Spent</h3>
+                                                    </div>
+                                                    <div>
+                                                        <i class='bx bx-chevron-up card-info-menu'></i>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex jc-c mT10">
+                                                    <span class="spent-box">$80.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="p30">
+                                            <div class="pos-rel mB30">
+                                                <a href="" class="wallet-status-box">
+                                                    <span class="wallet-circle"> </span>
+                                                    Pending
+                                                </a>
+                                            </div>
+                                            <div class="d-flex jc-sb mB5">
+                                                <p class="plan-name"> Netflix</p>
+                                                <span class="plan-price">$ 15.845 </span>
+                                            </div>
+                                            <div class="d-flex jc-sb">
+                                                <p class="plan-name"> Disney Hotstar</p>
+                                                <span class="plan-price">$ 15.845 </span>
+                                            </div>
+                                            <div class="d-flex jc-sa mT30">
+                                                <a href="" class="details">View Details</a>
+                                                <a href="" class="pay">Pay Now $50.00</a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Orders Card -->
+                        <div class="dashboard-card recent-order">
+                            <div class="card-inner">
+                                <div class="card-header mB20">
+                                    <h3 class="card-title">Recent Orders</h3>
+                                </div>
+                                <div class="card-body"></div>
+                                <div class="card-body">
+                                    <table class="orders-table">
+                                        <thead class="orders-table-head">
+                                            <th class="column-title">Customer</th>
+                                            <th class="column-title">product</th>
+                                            <th class="column-title">Invoice</th>
+                                            <th class="column-title">Price</th>
+                                            <th class="column-title">Status</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-card recent-order">
+                            <div class="card-inner">
+                                <div class="card-header mB20">
+                                    <h3 class="card-title">Recent Orders</h3>
+                                </div>
+                                <div class="card-body"></div>
+                                <div class="card-body">
+                                    <table class="orders-table">
+                                        <thead class="orders-table-head">
+                                            <th class="column-title">Customer</th>
+                                            <th class="column-title">product</th>
+                                            <th class="column-title">Invoice</th>
+                                            <th class="column-title">Price</th>
+                                            <th class="column-title">Status</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <div class="d-flex g10 al-c">
+                                                            <img src="./assets/images/profile.webp" alt="Profile image">
+                                                            <span>Raja</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>headphone</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>#2564454</div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>$60.00 </div>
+                                                </td>
+                                                <td class="column-inner">
+                                                    <div>
+                                                        <span class="order-status">Paid</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <footer class="d-flex jc-sb g30">
+                        <div>
+                            <p>Copyrights &copy; 2024 Dashboard. All rights reserved</p>
+                        </div>
+                        <div>
+                            <p>Codeed with ❤︎</p>
+                        </div>
+                    </footer>
+                </div>
+            </main>
+        </section>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- script -->
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>

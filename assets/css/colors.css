@@ -1,0 +1,17 @@
+:root {
+    --c-primary: #060818;
+    --c-secondary: #0e1726;
+    --c-light-gray: #dee2e6;
+    --c-gray: #888ea8;
+    --c-blue: #191e3a;
+    --c-navy: #506690;
+    --c-white: #fff;
+    --c-black: #212529;
+    --c-red: #f03e3e;
+    --c-green: #0ca678;
+    --c-darkblue: #228be6;
+    --c-light-blue: lightblue;
+    --c-back-drop: #0000008a;
+    --c-shadow-gray: rgba(81, 83, 101, 0.28);
+    --c-slate-gray: rgba(96, 125, 139, 0.54);
+}

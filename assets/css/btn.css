@@ -1,0 +1,64 @@
+.btn {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    border-radius: var(--br-sm);
+    cursor: pointer;
+}
+
+.drop-down-lists {
+    width: var(--w-drop-down);
+    background-color: var(--c-blue);
+    padding-block: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: var(--br-sm);
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.drop-down-link {
+    display: block;
+    padding: 10px 15px;
+    color: var(--c-white);
+}
+
+.drop-down-link:hover {
+    background-color: var(--c-shadow-gray);
+}
+
+.open-pop-up .drop-down-lists {
+    top: 20px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn-add {
+
+    padding: 8px 20px;
+    background-color: var(--c-darkblue);
+    color: var(--c-white);
+}
+
+.invoice-btn-action {
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    color: var(--c-light-gray);
+}
+
+.btn-send {
+    background-color: var(--c-darkblue);
+}
+
+.btn-preview {
+    background-color: var(--c-navy);
+
+}
+
+.btn-save {
+    background-color: var(--c-green);
+
+}

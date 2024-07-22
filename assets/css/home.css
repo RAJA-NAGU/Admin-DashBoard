@@ -1,0 +1,482 @@
+.app-section {
+    display: flex;
+    height: calc(100% - var(--h-headers));
+}
+
+
+/* aside */
+
+.side-menu-bar {
+    width: var(--w-sidebar);
+    height: var(--h-full);
+    padding: 30px 15px;
+    background-color: var(--c-primary);
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.app-section.hide .side-menu-bar {
+    transform: translate(-220px);
+    transition: all 0.5s ease-in-out;
+}
+
+.app-section.hide .app-main {
+    width: 100%;
+}
+
+.scrollbar {
+    overflow: auto;
+}
+
+.side-menu-list {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.side-menu-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: var(--br-sm);
+}
+
+.side-menu-icon,
+.side-menu-title,
+.side-menu-icon {
+    color: var(--c-navy);
+}
+
+.side-menu-title {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.side-menu-icon {
+    font-size: 22px;
+}
+
+.active.side-menu-list .side-menu-link {
+    background-color: var(--c-slate-gray);
+}
+
+
+.side-menu-list.active .side-menu-icon,
+.side-menu-list.active .side-menu-title,
+.side-menu-list.active .side-menu-icon {
+    color: var(--c-light-gray);
+}
+
+.sub-menu-lists {
+    height: 0;
+    transition: height 0.5s ease-in-out;
+}
+
+.sub-menu-link {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--c-navy);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.sub-menu-link::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: var(--br-full);
+    background-color: var(--c-navy);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.sub-menu-link:hover {
+    color: var(--c-light-blue);
+}
+
+.side-menu-list.active .bx-chevron-right {
+    transform: rotate(90deg);
+}
+
+/* aside end */
+
+
+/* main */
+
+.app-main {
+    width: calc(var(--w-full) - var(--w-sidebar));
+    height: var(--h-full);
+    padding: 20px 15px 0;
+    background-color: var(--c-primary);
+    transition: all 0.5s ease-in-out;
+}
+
+.dashboard-cards-container {
+    margin-left: -15px;
+    margin-right: -15px;
+    align-items: stretch;
+    row-gap: 10px;
+}
+
+.revenue-card {
+    flex: 0 0 66.66%;
+    width: 66.66%;
+}
+
+.dashboard-card {
+    padding: 0 15px 20px;
+}
+
+.card-inner {
+    padding: 20px;
+    background-color: var(--c-secondary);
+    border-radius: var(--br-sm);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--c-light-gray);
+}
+
+.card-menu {
+    font-size: 20px;
+    color: var(--c-gray);
+}
+
+
+.sales-card .card-inner,
+.revenue-card .card-inner {
+    min-height: 500px;
+}
+
+.wallet-card .card-inner,
+.transaction-card .card-inner {
+    min-height: 542.8px;
+}
+
+/* revenue card */
+.card-sub-title {
+    font-size: 20px;
+}
+
+.data {
+    font-size: 19px;
+    color: var(--c-light-gray);
+}
+
+.circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: var(--br-full);
+}
+
+.income,
+.apparel {
+    background-color: var(--c-darkblue);
+}
+
+.expense,
+.sports,
+.others {
+    background-color: var(--c-red);
+}
+
+.revenue-img-container {
+    max-width: 100%;
+    height: 350px;
+}
+
+.revenue-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* sales card */
+.sales-card {
+    flex: 0 0 33.33%;
+    align-self: stretch;
+}
+
+.sales-img-container {
+    max-width: 300px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.sales-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-container {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+.img-container img {
+    width: var(--w-full);
+    height: var(--h-full);
+    object-fit: cover;
+}
+
+/* summary-cards */
+
+.summary-card {
+    flex: 0 0 33.33%;
+    width: 33.33%;
+}
+
+/* wallet-card */
+
+.wallet-card .card-inner {
+    padding: 0;
+}
+
+.wallet-card {
+    flex: 0 0 33.33%;
+    width: 33.33%;
+}
+
+.wallet-card .card-inner {
+    border-top-left-radius: var(--br-lg);
+    border-top-right-radius: var(--br-lg);
+}
+
+.wallet-card .card-header {
+    padding: 20px 30px 60px;
+    background: linear-gradient(-255deg, #154875 30%, #009688 120%);
+    border-radius: 20px;
+}
+
+.profile-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: inline-block;
+    padding: 8px 10px 8px;
+    background-color: var(--c-back-drop);
+    border-radius: var(--br-lg);
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: var(--br-full);
+}
+
+.profile-name {
+    /* font-size: 16px; */
+    font-weight: 400;
+    color: var(--c-light-gray);
+}
+
+.profile-menu-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--c-back-drop);
+    border-radius: var(--br-md);
+}
+
+.profile-menu-link {
+
+    font-size: 30px;
+    color: var(--c-gray);
+    font-weight: 500;
+}
+
+.wallet-title,
+.wallet-amount {
+    font-size: 24px;
+    color: var(--c-light-gray);
+    font-weight: 400;
+}
+
+.wallet-amount {
+    font-size: 30px;
+}
+
+.wallet-info-box {
+    margin: -30px 0 20px;
+}
+
+.wallet-info-card {
+    width: 40%;
+    padding: 20px;
+    background-color: var(--c-primary);
+    border-radius: var(--br-md);
+}
+
+.wallet-info-card .card-title {
+    font-size: 16px;
+}
+
+.wallet-info-card .card-info-menu {
+    font-size: 16px;
+    color: var(--c-light-gray);
+}
+
+.spent-box {
+    /* display: block; */
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    color: var(--c-light-gray);
+    text-align: center;
+    background-color: var(--c-shadow-gray);
+    border-radius: var(--br-sm);
+
+}
+
+.wallet-status-box {
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 13px;
+    color: var(--c-light-gray);
+    background-color: var(--c-shadow-gray);
+    border-radius: var(--br-lg);
+}
+
+.wallet-circle {
+    width: 8px;
+    height: 8px;
+    background-color: var(--c-light-blue);
+    border-radius: var(--br-full);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.plan-name {
+    font-size: 15px;
+    color: var(--c-light-gray);
+}
+
+.plan-price {
+    font-size: 18px;
+    color: var(--c-light-gray);
+}
+
+.details,
+.pay {
+    display: inline-block;
+    padding: 8px;
+    font-size: 13px;
+    color: var(--c-darkblue);
+    background-color: var(--c-shadow-gray);
+    border-radius: var(--br-sm);
+}
+
+/* Transaction Card */
+
+.transaction-card {
+    flex: 0 0 33.33%;
+    width: 33.33%;
+}
+
+.transaction-list {
+    margin-bottom: 19.4px;
+}
+
+.transaction-icon {
+    padding: 10px;
+    font-size: 24px;
+    color: var(--c-light-gray);
+    background-color: rgb(111, 76, 31);
+    border-radius: var(--br-md);
+}
+
+.transaction-title {
+    font-size: 14px;
+    color: var(--c-light-gray);
+}
+
+.transaction-day {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.transaction-price {
+    font-size: 18px;
+}
+
+/* recent-order */
+
+.recent-order {
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.orders-table {
+    width: var(--w-full);
+    border-collapse: collapse;
+}
+
+.orders-table-head {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--c-light-blue);
+    background-color: var(--c-shadow-gray);
+}
+
+.column-title th:first-child {
+    border-top-left-radius: var(--br-md);
+    border-bottom-left-radius: var(--br-md);
+}
+
+.column-title:last-child {
+    border-top-right-radius: var(--br-md);
+    border-bottom-right-radius: var(--br-md);
+}
+
+
+.column-title,
+.column-inner {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.orders-table img {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--br-sm);
+}
+
+.order-status {
+    padding: 5px 10px;
+    color: var(--c-white);
+    background-color: var(--c-green);
+    border-radius: var(--br-sm);
+}
+
+/* footer */
+footer {
+    padding-bottom: 10px;
+
+}
+
+footer p {
+    font-size: 13px;
+}

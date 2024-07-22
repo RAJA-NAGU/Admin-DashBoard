@@ -1,0 +1,79 @@
+:root {
+    --w-full: 100%;
+    --h-full: 100%;
+    --w-screen: 100vw;
+    --h-screen: 100vh;
+    --h-header: 50px;
+    --h-headers: calc(2* var(--h-header));
+    --w-sidebar: 220px;
+    --w-drop-down: 150px;
+    --br-sm: 4px;
+    --br-md: 8px;
+    --br-lg: 25px;
+    --br-full: 50%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: var(--c-gray);
+    background-color: var(--c-primary);
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 12px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.s20 {
+    width: 20px;
+    height: 20px;
+}
+
+.s30 {
+    width: 30px;
+    height: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--c-shadow-gray);
+    border-radius: var(--br-sm);
+}
