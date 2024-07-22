@@ -34,26 +34,25 @@ const submenus = document.querySelectorAll(".sub-menu-lists")
 menus.forEach((menu)=>{
     menu.addEventListener("click",(e)=>{
         e.preventDefault();
-    
-
-        menus.forEach((menu)=>{
-            menu.classList.remove("active")
+        
+        // Check if the clicked menu is already active            
+        const isActive = menu.classList.contains("active")
+        document.querySelectorAll(".side-menu-list.active").forEach((element)=>{
+            element.classList.remove("active")
         })
-        menu.classList.add("active")
- 
 
         submenus.forEach((sub)=>{
             sub.style.height = "0";
         })
-        const submenu = menu.querySelector(".sub-menu-lists")
-
-        if (submenu) {
-            if(menu.classList.contains("active")){
-                submenu.style.height = submenu.scrollHeight + "px" 
+        
+        if(!isActive){
+            menu.classList.add("active")
+            const submenu = menu.querySelector(".sub-menu-lists")
+            if (submenu) {
+                if(menu.classList.contains("active")){
+                    submenu.style.height = submenu.scrollHeight + "px" 
+                }
             }
-        else{
-            submenu.style.height = "0"
-        }
         }
 
 
