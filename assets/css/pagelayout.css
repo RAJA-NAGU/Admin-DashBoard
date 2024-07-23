@@ -1,5 +1,5 @@
 .app-container {
-    height: var(--h-screen);
+    height: 100vh;
 }
 
 .header-container {

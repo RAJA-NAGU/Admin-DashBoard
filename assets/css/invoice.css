@@ -114,7 +114,11 @@
 
 .form-container {
     padding-bottom: 30px;
-    border-bottom: 1px solid var(--c-shadow-gray);
+}
+
+.invoice-information {
+    border-top: 1px solid var(--c-shadow-gray);
+
 }
 
 .invoice-info-title {
@@ -137,7 +141,7 @@
 
 .invoice-table {
     border-collapse: collapse;
-    width: var(--w-full);
+    width: 100%;
 }
 
 .table-head {

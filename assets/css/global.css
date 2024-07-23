@@ -1,8 +1,4 @@
 :root {
-    --w-full: 100%;
-    --h-full: 100%;
-    --w-screen: 100vw;
-    --h-screen: 100vh;
     --h-header: 50px;
     --h-headers: calc(2* var(--h-header));
     --w-sidebar: 220px;

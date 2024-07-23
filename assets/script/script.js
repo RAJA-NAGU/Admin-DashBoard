@@ -9,9 +9,21 @@ link.forEach((item)=>{
 
 // Main Navigation open-close
 const navmenu = document.querySelector(".bx-menu")
-const appcontainer = document.querySelector(".app-section")
+const appsection = document.querySelector(".app-section")
+const side_bar = document.querySelector(".side-menu-bar")
 navmenu.addEventListener("click",()=>{
-    appcontainer.classList.toggle("hide")
+
+    if(window.innerWidth <= 992){
+        if (appsection.classList.contains("hide")){
+            appsection.classList.remove("hide")
+            side_bar.style.padding = "30px 15px"
+            side_bar.style.width = "220px"
+        }else{
+            appsection.classList.add("hide")
+            side_bar.style.padding = "0"
+            side_bar.style.width = "0"
+        }
+    }
 })
 
 

@@ -8,7 +8,7 @@
 
 .side-menu-bar {
     width: var(--w-sidebar);
-    height: var(--h-full);
+    height: 100%;
     padding: 30px 15px;
     background-color: var(--c-primary);
     transition: all 0.5s ease-in-out;
@@ -23,7 +23,8 @@
 }
 
 .app-section.hide .app-main {
-    width: 100%;
+    /* width: 100%; */
+    flex-grow: 1;
 }
 
 .scrollbar {
@@ -109,8 +110,8 @@
 /* main */
 
 .app-main {
-    width: calc(var(--w-full) - var(--w-sidebar));
-    height: var(--h-full);
+    width: calc(100% - var(--w-sidebar));
+    height: 100%;
     padding: 20px 15px 0;
     background-color: var(--c-primary);
     transition: all 0.5s ease-in-out;
@@ -228,8 +229,8 @@
 }
 
 .img-container img {
-    width: var(--w-full);
-    height: var(--h-full);
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -433,7 +434,7 @@
 }
 
 .orders-table {
-    width: var(--w-full);
+    width: 100%;
     border-collapse: collapse;
 }
 
