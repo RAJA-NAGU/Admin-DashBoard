@@ -48,6 +48,7 @@
     padding: 10px;
     font-size: 13px;
     color: var(--c-light-gray);
+    font-weight: 600;
 }
 
 .btn-send {
@@ -55,11 +56,24 @@
 }
 
 .btn-preview {
-    background-color: var(--c-navy);
+    background-color: var(--c-red);
 
 }
 
 .btn-save {
     background-color: var(--c-green);
 
+}
+
+.add-item {
+    padding: 10px 20px;
+    color: var(--c-light-gray);
+    font-weight: 500;
+    background-color: var(--c-slate-gray);
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0)
+}
+
+.add-item:hover {
+    transform: translateY(-5px)
 }

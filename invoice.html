@@ -34,7 +34,7 @@
         <div class="invoice-card-container">
             <div class="invoice-card invoice-detail-card">
                 <div class="card-inner">
-                    <div class="d-flex jc-sb mB40">
+                    <div class="d-flex jc-sb mB40 upload-box">
                         <div class="upload-container">
                             <a href="" class="upload-link">
                                 <i class='bx bx-cloud-upload'></i>
@@ -42,74 +42,95 @@
                             </a>
                         </div>
                         <div>
-                            <a href="" class="invoice-label">Invoice Label</a>
+                            <input type="text" class="form-input invoice-label" placeholder="Invoice Label">
                         </div>
                     </div>
 
-                    <div class="d-flex jc-sb g20 form-container">
-                        <form action="" class="form invoice-form">
-                            <h2 class="form-title">Form:-</h2>
-                            <div class="form-element">
-                                <label for="" class="form-label">Name</label>
-                                <input type="text" class="form-input" placeholder="Business Name">
+                    <div class="d-flex jc-sb form-container">
+                        <div class="form invoice-form">
+                            <div class="form-inner">
+                                <h2 class="form-title">Form:-</h2>
+                                <div class="form-element">
+                                    <label for="" class="form-label">Name</label>
+                                    <div class="form-input-box">
+                                        <input type="text" class="form-input" placeholder="Business Name">
+                                    </div>
+                                </div>
+                                <div class="form-element">
+                                    <label for="" class="form-label">Email</label>
+                                    <div class="form-input-box">
+                                        <input type="text" class="form-input" placeholder="ecample@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-element">
+                                    <label for="" class="form-label">Address</label>
+                                    <div class="form-input-box">
+                                        <input type="text" class="form-input" placeholder="XYZ Street">
+                                    </div>
+                                </div>
+                                <div class="form-element">
+                                    <label for="" class="form-label">Phone</label>
+                                    <div class="form-input-box">
+                                        <input type="text" class="form-input" placeholder="Business Name">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-element">
-                                <label for="" class="form-label">Email</label>
-                                <input type="text" class="form-input" placeholder="ecample@gmail.com">
-                            </div>
-                            <div class="form-element">
-                                <label for="" class="form-label">Address</label>
-                                <input type="text" class="form-input" placeholder="XYZ Street">
-                            </div>
-                            <div class="form-element">
-                                <label for="" class="form-label">Phone</label>
-                                <input type="text" class="form-input" placeholder="Business Name">
-                            </div>
-                        </form>
+                        </div>
 
 
 
-                        <form action="" class="form bill-form">
-                            <h2 class="form-title">Bills To:-</h2>
-                            <div class="form-element">
-                                <label for="" class="form-label">Name</label>
-                                <input type="text" class="form-input" placeholder="Business Name">
+                        <div class="form bill-form">
+                            <div class="form-inner">
+                                <h2 class="form-title">Bills To:-</h2>
+                                <div class="form-element">
+                                    <label for="" class="form-label">Name</label>
+                                    <div class="form-input-box">
+                                        <input type="text" class="form-input" placeholder="Business Name">
+                                    </div>
+                                </div>
+                                <div class="form-element">
+                                    <label for="" class="form-label">Email</label>
+                                    <div class="form-input-box">
+                                        <input type="text" class="form-input" placeholder="ecample@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-element">
+                                    <label for="" class="form-label">Address</label>
+                                    <div class="form-input-box">
+                                        <input type="text" class="form-input" placeholder="XYZ Street">
+                                    </div>
+                                </div>
+                                <div class="form-element">
+                                    <label for="" class="form-label">Phone</label>
+                                    <div class="form-input-box">
+                                        <input type="text" class="form-input" placeholder="Business Name">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-element">
-                                <label for="" class="form-label">Email</label>
-                                <input type="text" class="form-input" placeholder="ecample@gmail.com">
-                            </div>
-                            <div class="form-element">
-                                <label for="" class="form-label">Address</label>
-                                <input type="text" class="form-input" placeholder="XYZ Street">
-                            </div>
-                            <div class="form-element">
-                                <label for="" class="form-label">Phone</label>
-                                <input type="text" class="form-input" placeholder="Business Name">
-                            </div>
-                        </form>
+                        </div>
 
                     </div>
 
                     <div class="d-flex jc-sb pT30 mB30 invoice-information">
-                        <div>
+                        <div class="invoice-info-box mB20">
                             <h2 class="invoice-info-title">Invoice Number</h2>
-                            <a href="" class="invoice-info-description">#00001</a>
+                            <input type="text" class="form-input" placeholder="#00001">
                         </div>
 
-                        <div>
+                        <div class="invoice-info-box mB20">
                             <h2 class="invoice-info-title">Invoice Date</h2>
-                            <a href="" class="invoice-info-description description-date">21-7-2024</a>
+                            <input type="text" class="form-input" placeholder="21-7-2024">
                         </div>
 
-                        <div>
+                        <div class="invoice-info-box">
                             <h2 class="invoice-info-title">Due Date</h2>
-                            <a href="" class="invoice-info-description description-date">21-7-2024</a>
+                            <input type="text" class="form-input" placeholder="21-7-2024">
                         </div>
                     </div>
 
                     <table class="invoice-table">
                         <thead class="table-head">
+                            <th class="column-title"></th>
                             <th class="column-title">Description</th>
                             <th class="column-title">Rate</th>
                             <th class="column-title">Qty</th>
@@ -120,94 +141,220 @@
                             <tr>
                                 <td class="table-row-box">
                                     <div>
-                                        <div>
-                                            <span class="table-content">Item Description</span>
-                                        </div>
-                                        <div>
-                                            <span class="table-content">Item Details</span>
-                                        </div>
+                                        <a href="">
+                                            <i class='bx bxs-x-circle'></i>
+                                        </a>
                                     </div>
                                 </td>
-
-                                <td class="table-row-box">
+                                <td class="table-row-box item-description">
                                     <div>
-                                        <span class="table-content">Price</span>
+                                        <input type="text" class="form-input mB10" placeholder="Item Description">
                                     </div>
-                                </td>
-
-                                <td class="table-row-box">
                                     <div>
-                                        <span class="table-content">Quantity</span>
+                                        <textarea name="" id="" cols="30" rows="10" class="form-input additinal-details"
+                                            placeholder="Additional Details"></textarea>
                                     </div>
                                 </td>
 
-                                <td class="table-row-box">
+                                <td class="table-row-box price">
+                                    <div>
+                                        <input type="text" class="form-input" placeholder="Price">
+                                    </div>
+                                </td>
+
+                                <td class="table-row-box quantity">
+                                    <div>
+                                        <input type="text" class="form-input" placeholder="Quantity">
+                                    </div>
+                                </td>
+
+                                <td class="table-row-box amount">
                                     <div>
                                         <span class="table-content-price">$24.00</span>
                                     </div>
                                 </td>
 
-                                <td class="table-row-box">
+                                <td class="table-row-box tax">
                                     <div>
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="" id="" class="check-box">
                                     </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
 
-                </div>
-            </div>
-            <div class="invoice-card currency-card">
-                <div class="card-inner">
-                    <div class=" mB20">
-                        <h3 class="currency-heading">Currency</h3>
-                        <a href="" class="d-flex al-c jc-sb mT20 currency-menu usd">
-                            <div class="d-flex g10  al-c">
-                                <img src="./assets/images/flag-us.svg" alt="" class="currency-img">
-                                <span class="currency-type">USD - US Dollar</span>
-                            </div>
-                            <div>
-                                <i class='bx bx-chevron-down'></i>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="mB20">
-                        <h3 class="currency-heading">Tax</h3>
-                        <h4 class="currency-sub-head mT20">Type</h4>
-                        <a href="" class="d-flex al-c jc-sb mT10 currency-menu">
-                            <span class="currency-type">None</span>
-                            <i class='bx bx-chevron-down'></i>
-                        </a>
-                    </div>
-
                     <div>
-                        <h3 class="currency-heading">Tax</h3>
-                        <h4 class="currency-sub-head mT20">Type</h4>
-                        <a href="" class="d-flex al-c jc-sb mT10 currency-menu ">
-                            <div>
+                        <button class="btn add-item">Add Item</button>
+                    </div>
 
-                                <span class="currency-type">None</span>
+                    <div class="account-information-box d-flex jc-sb pB30">
+                        <div class="account-information">
+                            <div class="account-information-inner">
+                                <div class="account-information-row d-flex">
+                                    <label for="" class="form-label">Account #:</label>
+                                    <div class="form-input-box">
+                                        <input type="text" class="form-input" placeholder="Bank Account Number">
+                                    </div>
+                                </div>
+                                <div class="account-information-row d-flex">
+                                    <label for="" class="form-label">Bank Name: </label>
+                                    <div class="form-input-box">
+                                        <input type="text" class="form-input" placeholder="Enter Bank Name">
+                                    </div>
+                                </div>
+                                <div class="account-information-row d-flex">
+                                    <label for="" class="form-label">SWIFT code: </label>
+                                    <div class="form-input-box">
+                                        <input type="text" class="form-input" placeholder="Insert Code">
+                                    </div>
+                                </div>
+                                <div class="account-information-row d-flex">
+                                    <label for="" class="form-label">Country: </label>
+                                    <div class="form-input-box">
+                                        <select class="form-input select-country" placeholder="Bank Account Number">
+                                            <option value="Selecet Country">Select Country</option>
+                                            <option value="US">United States</option>
+                                            <option value="UK">United Kingdom</option>
+                                            <option value="AU">Australia</option>
+                                            <option value="IN">India</option>
+                                            <option value="SL" class="option">Srilanka</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
+                        </div>
+                        <div class="price-information">
+                            <div class="price-information-inner">
+                                <div class="d-flex jc-sb">
+                                    <label class="form-label">Subtotal</label>
+                                    <div>
+                                        <span class="price-value">$0.00 </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex jc-sb">
+                                    <label class="form-label">Discount</label>
+                                    <div>
+                                        <span class="price-value">$0.00 </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex jc-sb">
+                                    <label class="form-label">Tax</label>
+                                    <div>
+                                        <span class="price-value ">0% </span>
+                                    </div>
+                                </div>
+                                <div class="total-price-box d-flex jc-sb">
+                                    <label class="form-label">Total</label>
+                                    <div>
+                                        <span class="total-price ">$0.00 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                                <i class='bx bx-chevron-down'></i>
-                            </div>
-                        </a>
+                    <div class="notes-box">
+                        <label for="" class="form-label">Notes:</label>
+                        <div class="d-flex ">
+                            <textarea name="" id="" cols="30" rows="10" class="form-input notes"
+                                placeholder="Notes - for example Thank you for doing Business with us"></textarea>
+                        </div>
                     </div>
 
                 </div>
-                </a>
             </div>
 
-            <div class="invoice-card  invoice-action-card">
-                <div class="card-inner">
-                    <button class="btn invoice-btn-action btn-send mB20">Send invoice</button>
-                    <button class="btn invoice-btn-action btn-preview mB20">Preview</button>
-                    <button class="btn invoice-btn-action btn-save">Save</button>
+            <div class="right-col">
+                <div class="invoice-card currency-card">
+                    <div class="card-inner">
+                        <div class=" mB20">
+                            <h3 class="currency-heading">Currency</h3>
+                            <div class="d-flex al-c jc-sb mT20 currency-menu usd select-trigger">
+                                <div class="d-flex g10  al-c">
+                                    <img src="./assets/images/flag-us.svg" alt="" class="currency-img">
+                                    <span class="currency-type">USD - US Dollar</span>
+                                </div>
+                                <div>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+
+                                <div class="select-options">
+                                    <span class="select-option">
+                                        <a class="d-flex al-c jc-sb">
+                                            <div class="d-flex g10  al-c">
+                                                <img src="./assets/images/flag-uk.png" alt="" class="currency-img">
+                                                <span class="currency-type">GBP - UK Pound</span>
+                                            </div>
+                                        </a>
+                                    </span>
+                                    <span class="select-option">
+                                        <a class="d-flex al-c jc-sb">
+                                            <div class="d-flex g10  al-c">
+                                                <img src="./assets/images/flag-can.png" alt="" class="currency-img">
+                                                <span class="currency-type">CAD - Candian Dollar</span>
+                                            </div>
+                                        </a>
+                                    </span>
+                                    <span class="select-option">
+                                        <a class="d-flex al-c jc-sb">
+                                            <div class="d-flex g10  al-c">
+                                                <img src="./assets/images/flag-in.png" alt="" class="currency-img">
+                                                <span class="currency-type">INR - Indian Rupees</span>
+                                            </div>
+                                        </a>
+                                    </span>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mB20">
+                            <h3 class="currency-heading">Tax</h3>
+                            <h4 class="currency-sub-head mT20">Type</h4>
+                            <div class="d-flex al-c jc-sb mT10 currency-menu select-trigger">
+                                <span class="currency-type">None</span>
+                                <i class='bx bx-chevron-down'></i>
+                                <div class="select-options">
+                                    <span class="select-option">Per Item</span>
+                                    <span class="select-option">On Total</span>
+                                    <span class="select-option">None</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="currency-heading">Tax</h3>
+                            <h4 class="currency-sub-head mT20">Type</h4>
+                            <div href="" class="d-flex al-c jc-sb mT10 currency-menu select-trigger">
+                                <div>
+                                    <span class="currency-type">None</span>
+                                </div>
+                                <div>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+
+                                <div class="select-options">
+                                    <span class="select-option">Per Item</span>
+                                    <span class="select-option">On Total</span>
+                                    <span class="select-option">None</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </a>
+                </div>
+
+                <div class="invoice-card  invoice-action-card">
+                    <div class="card-inner">
+                        <button class="btn invoice-btn-action btn-send mB20">Send invoice</button>
+                        <button class="btn invoice-btn-action btn-preview mB20">Preview</button>
+                        <button class="btn invoice-btn-action btn-save">Save</button>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
     </div>

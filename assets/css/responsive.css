@@ -9,6 +9,16 @@
         flex: 0 0 100%;
         width: 100%;
     }
+
+    .right-col {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .invoice-btn-action {
+        width: 32%;
+        margin-bottom: 0;
+    }
 }
 
 @media(max-width :992px) {
@@ -77,10 +87,6 @@
         font-size: 12px;
     }
 
-    .invoice-information {
-        flex-direction: column;
-    }
-
     .invoice-info-description {
         font-size: 12px;
         margin-bottom: 10px;
@@ -90,6 +96,16 @@
         font-size: 12px;
         width: 100px;
     }
+
+    .form {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    /* 
+    .invoive-info-box {
+        flex: 0 0 50%;
+    } */
 }
 
 @media(max-width :768px) {
@@ -170,14 +186,51 @@
         padding: 8px;
     }
 
+    .invoice-information {
+        flex-direction: column;
+    }
+
+    .invoice-btn-action {
+        width: 100%;
+    }
+
+    .invoice-info-box {
+        flex: 0 0 100%;
+        width: 100%;
+        padding-inline: 15px;
+    }
+
+    .invoice-table {
+        display: none;
+    }
+
+    .account-information-box {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .account-information,
+    .price-information {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .price-information-inner {
+        margin: auto;
+    }
+
+    .upload-box {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
     .section-footer {
         flex-direction: column;
         justify-content: center;
         padding-bottom: 10px;
-
-    }
-
-    .Copyright {
         text-align: center;
+
     }
+
 }

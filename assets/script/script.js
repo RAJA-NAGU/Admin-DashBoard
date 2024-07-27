@@ -35,8 +35,20 @@ btns.forEach((btn)=>{
         // const parent = btn.closest(".drop-down-container");
         const parent = btn.parentNode
         parent.classList.toggle("open-pop-up")
-
     })
+})
+// close pop-up if clicked doutside
+document.body.addEventListener("click",(e)=>{
+    if(!e.target.closest(".drop-down-container")){
+        let pop_ups = document.querySelectorAll(".drop-down-lists")
+        
+        for(let i=0 ; i < pop_ups.length ; i++){
+            let parent = pop_ups[i].closest(".drop-down-container")
+            if(parent.classList.contains("open-pop-up")){
+                parent.classList.remove("open-pop-up")
+            }
+        }
+    }
 })
 
 
@@ -71,6 +83,15 @@ menus.forEach((menu)=>{
     })
 })
 
+document.querySelectorAll(".sub-menu-list").forEach((item)=>{
+    item.addEventListener("click",(e)=>{
+        e.preventDefault();
+        let parent =item.closest(".side-menu-list")
+        parent.classList.add("active")
+        let submenu = parent.querySelector(".sub-menu-lists")
+        submenu.style.height = submenu.scrollHeight + "px"
+    })
+})
 
 // load pages
 
@@ -140,5 +161,27 @@ const addTask = ()=>{
     })
 }
 
-btnadd.addEventListener("click",addTask)
+// btnadd.addEventListener("click",addTask)
 
+
+// Currency Drop_down
+
+const triggers = document.querySelectorAll(".select-trigger")
+
+triggers.forEach((trigger)=>{
+    trigger.addEventListener("click",()=>{
+        trigger.classList.toggle("open")
+    })
+})
+// close dropdown if click outside
+document.body.addEventListener('click', (e)=>{
+    if(!e.target.closest(".select-trigger")){
+        let options = document.querySelectorAll(".select-options")
+        for(let i=0 ; i < options.length ; i++){
+            let parent = options[i].closest(".select-trigger")
+            if(parent.classList.contains("open")){
+                parent.classList.remove("open")
+            }
+        }
+    }
+})

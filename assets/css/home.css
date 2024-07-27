@@ -51,22 +51,40 @@
 }
 
 .side-menu-title {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
 }
 
 .side-menu-icon {
-    font-size: 22px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.side-menu {
+    font-size: 18px;
+    color: var(--c-navy);
 }
 
 .active.side-menu-list .side-menu-link {
     background-color: var(--c-slate-gray);
 }
 
+.side-menu-link:hover {
+    background-color: var(--c-slate-gray);
+}
+
+.side-menu-link:hover .side-menu-icon,
+.side-menu-link:hover .side-menu-title,
+.side-menu-link:hover .side-menu-icon,
+.side-menu-link:hover .side-menu {
+    color: var(--c-light-gray);
+}
+
 
 .side-menu-list.active .side-menu-icon,
 .side-menu-list.active .side-menu-title,
-.side-menu-list.active .side-menu-icon {
+.side-menu-list.active .side-menu-icon,
+.side-menu-list.active .side-menu {
     color: var(--c-light-gray);
 }
 
@@ -98,6 +116,10 @@
 
 .sub-menu-link:hover {
     color: var(--c-light-blue);
+}
+
+.sub-menu-link:hover::before {
+    background-color: var(--c-light-blue);
 }
 
 .side-menu-list.active .bx-chevron-right {
@@ -459,7 +481,6 @@
 .column-title,
 .column-inner {
     padding: 10px 15px;
-    text-align: left;
 }
 
 .orders-table img {
@@ -469,10 +490,30 @@
 }
 
 .order-status {
-    padding: 5px 10px;
+    padding: 5px 10px 5px 0;
     color: var(--c-white);
+}
+
+.order-status.active {
+    padding-left: 10px;
     background-color: var(--c-green);
     border-radius: var(--br-sm);
+}
+
+.name-overflow,
+.product-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.name-overflow {
+    width: 70px;
+}
+
+.product-overflow {
+    display: inline-block;
+    width: 70px;
 }
 
 /* footer */
@@ -483,6 +524,7 @@
 
 }
 
-.Copyright {
+.copyright-notice,
+.code-notice {
     font-size: 13px;
 }
